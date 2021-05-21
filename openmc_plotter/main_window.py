@@ -464,7 +464,7 @@ class MainWindow(QMainWindow):
         if filename:
             if "." not in filename:
                 filename += ".png"
-            self.plotIm.figure.savefig(filename, transparent=True)
+            self.plotIm.figure.savefig(filename, facecolor='white', edgecolor='none')
             self.statusBar().showMessage('Plot Image Saved', 5000)
 
     def saveView(self):
